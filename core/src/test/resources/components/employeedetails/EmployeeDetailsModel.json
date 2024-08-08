@@ -1,0 +1,15 @@
+{
+  "data": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "designation": "dddddd",
+    "jcr:created": "Tue Aug 06 2024 18:08:02 GMT-0300",
+    "phonenumber": "221212121212",
+    "age": "16",
+    "name": "Name",
+    "company": "ltda",
+    "jcr:lastModified": "Tue Aug 06 2024 18:08:33 GMT-0300",
+    "sling:resourceType": "practice/components/employeedetails"
+  }
+}

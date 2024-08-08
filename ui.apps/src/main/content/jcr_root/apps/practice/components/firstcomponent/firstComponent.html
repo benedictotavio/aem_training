@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" /><div data-emptytext="First Component" class="cq-placeholder"></div>
+<sly data-sly-test="${properties.jcr:title}">
+    <div>
+        <h2 class="first-component-text">Hello World</h2>
+        <h6>This is my first component</h6>
+        <p>${properties.jcr:title}</p>
+        <h2>${currentPage.title}</h2>
+        <p data-sly-text="${currentPage.title}">This text wiil be replaced.</p>
+        <p data-sly-attribute.title=${properties.jcr:title}>Attribute is set by element.</p>
+        <sly data-sly-include="test.html" />
+    </div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.css @ categories='aem.tutorials'}" />
+<sly data-sly-call="${clientlib.js @ categories='aem.tutorials'}" />

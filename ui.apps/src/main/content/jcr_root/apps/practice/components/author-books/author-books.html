@@ -1,0 +1,11 @@
+<h1>Author Bio</h1>
+<div data-sly-use.booksList="com.adobe.aem.tutorial.core.models.AuthorBooks">
+  <div data-sly-list.item="${booksList.books}">
+    <p><b>Books name:</b> ${item}</p>
+  </div>
+  <div>
+    <p>All books: 
+    	<b>${booksList.books @ join=','}</b>
+    </p>
+  </div>
+</div>

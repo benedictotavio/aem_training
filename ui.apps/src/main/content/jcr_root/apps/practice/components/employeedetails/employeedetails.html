@@ -1,0 +1,16 @@
+<sly data-sly-test="${properties.jcr:name}">
+<div class="employee-details-card">
+    <h1>Employee Info</h1>
+    <h2>${properties.jcr:name}</h2>
+    <div>
+        <p>${properties.jcr:age}</p>
+        <p>${properties.jcr:phonenumber}</p>
+    </div>
+    <div>
+        <p>${properties.jcr:company}</p>
+        <p>${properties.jcr:designation}</p>
+    </div>
+</div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.all @ categories='employee.details'}" />
